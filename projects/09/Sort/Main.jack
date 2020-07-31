@@ -1,0 +1,42 @@
+class Sort
+{
+    function void main()
+    {
+        var Array arr;
+        var int length,i,j,temp;
+
+        let length = Keyboard.readInt("Size of Array");
+        let i = 0;
+        arr  = Array.new(length);
+
+        while(i<n)
+        {
+            let arr[i] = Keyboard.readInt("");
+            let i = i+1;
+        }
+
+        let i = n;
+        while(i>0)
+        {
+            let j = 1;
+            while(j<i)
+            {
+                if(arr[j]<arr[j-1])
+                {
+                    let temp = arr[j];
+                    let arr[j] = arr[j-1];
+                    let arr[j-1]=temp;
+                }
+                let j = j+1;
+            }
+        }
+
+        let i = 0;
+
+        while(i<n)
+        {
+            do Output.printInt(arr[i]);
+            let i = i+1;
+        }
+    }
+}
